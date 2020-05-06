@@ -1,4 +1,5 @@
 # student-manager
+Sample files for https://www.linkedin.com/learning/learning-vuex/
 
 ## Project setup
 ```
