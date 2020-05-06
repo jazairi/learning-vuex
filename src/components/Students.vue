@@ -16,16 +16,16 @@
 </template>
 
 <script>
-import axios from "axios";
+import axios from 'axios'
 
 export default {
-    data() {
-        return {
-            students: []
-        }
-    },
-  async created() {
-      this.students = (await axios.get('http://localhost:3000/students')).data;
+  data () {
+    return {
+      students: []
+    }
+  },
+  async created () {
+    this.students = (await axios.get('http://localhost:3000/students')).data
   }
-};
+}
 </script>

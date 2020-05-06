@@ -12,22 +12,21 @@
 </template>
 
 <script>
-import NewStudent from "./components/NewStudent";
-import Students from "./components/Students";
-import EditStudent from "./components/EditStudent";
-
+import NewStudent from './components/NewStudent'
+import Students from './components/Students'
+import EditStudent from './components/EditStudent'
 
 export default {
-  name: "App",
+  name: 'App',
   components: {
     NewStudent,
     Students,
     EditStudent
   },
-  data() {
+  data () {
     return {
       //
-    };
+    }
   }
-};
+}
 </script>

@@ -23,22 +23,22 @@
 </template>
 
 <script>
-import axios from "axios";
-import Students from "./Students";
+import axios from 'axios'
+import Students from './Students'
 
 export default {
-  data() {
+  data () {
     return {
-      name: ""
-    };
+      name: ''
+    }
   },
   methods: {
-    async submit() {
-      axios.post("http://localhost:3000/students", { name: this.name });
+    async submit () {
+      axios.post('http://localhost:3000/students', { name: this.name })
     }
   },
   components: {
-      Students
+    Students
   }
-};
+}
 </script>

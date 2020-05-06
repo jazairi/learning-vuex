@@ -23,25 +23,25 @@
 </template>
 
 <script>
-import axios from "axios";
-import Students from "./Students";
+import axios from 'axios'
+import Students from './Students'
 
 export default {
-  data() {
+  data () {
     return {
-      name: ""
-    };
+      name: ''
+    }
   },
-  async created() {
-      this.name = (await axios.get(`http://localhost:3000/students?id=${this.$route.params.id}`)).data[0].name;
+  async created () {
+    this.name = (await axios.get(`http://localhost:3000/students?id=${this.$route.params.id}`)).data[0].name
   },
   methods: {
-    async submit() {
-      axios.put(`http://localhost:3000/students/${this.$route.params.id}`, { name: this.name });
+    async submit () {
+      axios.put(`http://localhost:3000/students/${this.$route.params.id}`, { name: this.name })
     }
   },
   components: {
-      Students
+    Students
   }
-};
+}
 </script>
